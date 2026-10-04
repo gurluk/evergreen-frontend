@@ -21,10 +21,34 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"preset": "recommended",
 			"a11y": {
 				"noAmbiguousAnchorText": "off",
 				"noSvgWithoutTitle": "off"
+			},
+			"correctness": {
+				"noUnusedImports": "warn",
+				"noUnusedFunctionParameters": {
+					"fix": "none",
+					"level": "warn",
+					"options": {}
+				},
+				"noUnusedVariables": {
+					"fix": "none",
+					"level": "warn",
+					"options": {}
+				}
+			},
+			"style": {
+				"noDefaultExport": "off"
+			},
+			"suspicious": {
+				"noConsole": {
+					"fix": "none",
+					"level": "warn",
+					"options": {
+						"allow": ["info"]
+					}
+				}
 			}
 		}
 	},

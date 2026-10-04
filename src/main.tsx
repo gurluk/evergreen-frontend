@@ -5,6 +5,8 @@ import App from './App.tsx';
 
 const rootElement = document.getElementById('root');
 
+console.log('first');
+
 if (!rootElement) {
 	throw new Error('Root element not found');
 }
