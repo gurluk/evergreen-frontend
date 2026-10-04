@@ -1,5 +1,18 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": {
+					"level": "on",
+					"options": {
+						"groups": [":PACKAGE:", ":BLANK_LINE:", ["~/**"], ":BLANK_LINE:", ["./**"]]
+					}
+				}
+			}
+		},
+		"enabled": true
+	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
@@ -10,7 +23,8 @@
 		"rules": {
 			"preset": "recommended",
 			"a11y": {
-				"noAmbiguousAnchorText": "off"
+				"noAmbiguousAnchorText": "off",
+				"noSvgWithoutTitle": "off"
 			}
 		}
 	},
